@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Proyecto Inmueble</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header id="title">
+        <h1>Bienvenid@ al Conjunto Residencial Palomitas</h1>
+    </header>
+    <main>
+        <p id="textinicial">En esta seccion podra calcular cuanto debe de pagar mensualmente cada uno de los residentes que viven en la unidad.Acontinuacion encontrara abajo el formulario que debes diligenciar</p>
+        <form action="#" id="formConjunto">
+            <section id="inmueble">
+                <label for="numeroApartamento">Numero del inmueble</label>
+                <input type="text" name="numeroApartamento" id="numeroApartamento" placeholder="Ingrese el numero del inmueble">
+                <div id="errorNumeroApartamento" class="error">
+                    <small style="color: red;">Este campo es obligatorio</small>
+                </div>
+            </section>
+            <section id="metroInmueble">
+                <label for="metrosCuadrados">Metros Cuadrados del inmueble</label>
+                <input type="number" name="metrosCuadrados" id="metrosCuadrados" placeholder="Ingrese los metros cuadrados del inmueble">
+                <div id="errorMetrosCuadrados" class="error">
+                    <small style="color: red;">Este campo es obligatorio</small>
+                </div>
+            </section>
+           <section id="Tipo">
+            <label for="tipoInmueble">Tipo de inmueble</label>
+            <select name="tipoInmueble" id="tipoInmueble" >
+                <option value="">Seleccione una opcion</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa</option>
+            </select>
+            <div id="errorTipoInmueble" class="error">
+                <small style="color: red;">Este campo es obligatorio</small>
+            </div>
+           </section>
+            <section id="cantidadH">
+                <label for="cantidadHabitantes">Cantidad de habitantes en el inmueble</label>
+                <input type="number" name="cantidadHabitantes" id="cantidadHabitantes" placeholder="Ingrese la cantidad de habitantes">
+                <div id="errorCantidadHabitantes" class="error">
+                    <small style="color: red;">Este campo es obligatorio</small>
+                </div>
+            </section>
+            <section id="sectionbutton">
+                <button type="button" onclick="formulario()">Enviar</button>
+            </section>    
+            
+        </form>
+        <div id="edadCadaHabitante">
+            <label for="cantidadHabitantes" id="labelEdadGenero">Seleccione el genero e ingrese la edad de la persona 1 que vive en el inmueble </label>
+            <section id="sectionGenero">
+                <select name="genero" id="genero">
+                    <option value="">Seleccionar un genero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="fenemino">Femenino</option>
+                </select>
+                <div id="errorGenero" class="error">
+                    <small style="color: red;">Este campo es obligatorio</small>
+                </div>
+            </section>
+            <section id="sectionedad">
+                <input type="number" name="edad" id="edad" placeholder="edad">
+                <div id="errorEdad" class="error">
+                    <small style="color: red;">Este campo es obligatorio</small>
+                </div>
+            </section>
+            
+            <button type="button" onclick="calcularGimnasio()">Enviar</button>
+        </div>
+        <section id="mensaje">
+            <p>Has click en el boton Continuar si deseas seguir registrando mas residentes o Has click en el boton Mostras Resultado para ver lo que deben pagar cada residente</p>
+            <button type="button" onclick="continuar()">Continuar</button>
+            <button type="button" onclick="resultados()">Mostrar Resultado</button>
+        </section>
+        <section id="contenedor">
+        </section>
+    </main>
+    <footer>
+        <small>Desarrollado por Juan Palomo, &copy; 2020 Palomitas Group S.A.S</small>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+       

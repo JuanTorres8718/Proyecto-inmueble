@@ -1,0 +1,42 @@
+.error, #edadCadaHabitante, #mensaje {
+    display: none;
+}
+
+#title {
+    text-align: center;
+}
+
+main{
+    text-align: center;
+    padding: 5px;
+}
+
+main #textinicial {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#formConjunto {
+    display: flex;
+    flex-direction: column;
+
+}
+#formConjunto label{
+    font-size: 17px;
+}
+
+#formConjunto input ,select {
+    width: 80%;
+    height: 4vh;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+#formConjunto button {
+    width: 80%;
+    margin-top: 20px;
+}
+
+
+
